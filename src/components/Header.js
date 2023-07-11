@@ -1,16 +1,19 @@
 //import packages
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 //import assests
 import '../assets/css/Header.css';
 
 export default function Header() {
     return (
-        <header className="enHeader">
-            <nav>
-                <h1>Dark Horse Events</h1>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='about'>About</NavLink>
-            </nav>
-        </header>
+        <div>
+            <header className="enHeader">
+                <nav>
+                     <h1><Link to='/'>Dark Horse Events</Link></h1>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='about'>About</NavLink>
+                    <NavLink to='help'>Help</NavLink>
+                </nav>
+            </header>
+        </div>
     )
 }

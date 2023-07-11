@@ -1,0 +1,18 @@
+.help--nav{
+    display: flex;
+    gap: 1rem;
+    margin: 4rem auto;
+}
+.help--nav  a {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+
+.help--nav a.active {
+    color: var(--cust);
+    padding: 0.75rem;
+    background: var(--tertiary);
+}
