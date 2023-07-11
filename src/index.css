@@ -1,0 +1,42 @@
+/*import font style*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+/* initializing colors to use */
+
+:root {
+    --primary: #FFFFFF;
+    --secondary: #000;
+    --tertiary: #66BFBF;
+    --cust: #EAF6F6;
+    --backup: #FF0063;
+}
+
+* {
+    color: #000;
+    margin: 0;
+}
+
+/* resets */
+
+body {
+    padding: 1rem;
+    background-color: var(--primary);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+
+}
+
+p {
+    margin: 1rem;
+}
+
+button {
+    border: 0;
+    padding: 0.75rem;
+    background-color: var(--backup);
+    color: #EAF6F6;
+}
+a{
+    
+    text-decoration: none;
+}
