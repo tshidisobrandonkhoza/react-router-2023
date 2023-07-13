@@ -9,20 +9,33 @@
 }
 
 .events-title li {
-    border-radius: 1rem;
+
     margin: .75rem 1.5rem;
-    padding: 1rem;
-    background-color: var(--tertiary);
 
-    transition: all.2s linear;
-}
 
-.events-title li:hover {
-    opacity: .8;
-    transition: all.2s linear;
+    display: flex;
 }
 
 .events-title li a {
     color: var(--primary);
     font-size: 1.5rem;
+    flex-grow: inherit;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--tertiary);
+    transition: all.2s linear;
+}
+
+.events-title li a:hover {
+
+    opacity: .8;
+    transition: all.2s linear;
+}
+.events-title h5{
+    font-size: 2rem;
+    color: var(--secondary);
+}
+.events-title p{
+    color: var(--secondary);
 }

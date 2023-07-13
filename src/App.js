@@ -8,10 +8,11 @@ import MainRoot from './layouts/MainRoot'
 import Help from './layouts/Help';
 import Faq from './components/helpComponents/Faq';
 import Contact from './components/helpComponents/Contact';
-import Events,{ eventsLoader} from './layouts/Events';
-import EventsList from './components/eventsComponents/EventsList';
+import Events from './layouts/Events';
 
-import EventsListDetails from './components/eventsComponents/EventsList';
+import EventList, { eventsLoader } from './components/eventsComponents/EventList';
+import EventDetails, { eventLoader } from './components/eventsComponents/EventDetails';
+import EventError from './components/eventsComponents/EventError';
 //import assests
 
 const router = createBrowserRouter([{
@@ -42,12 +43,18 @@ const router = createBrowserRouter([{
     }, {
       path: "events",
       element: <Events />,
-      loader: eventsLoader,
-      children: [ 
-      {
-        path: "eventslistdetails",
-        element: <EventsListDetails />
-      }]
+      errorElement: <EventError />,
+      children: [
+        {
+          path: "",
+          element: <EventList />,
+          loader: eventsLoader,
+        },
+        {
+          path: ":idx",
+          element: <EventDetails />,
+          loader: eventLoader
+        }]
     }]
 }]);
 
