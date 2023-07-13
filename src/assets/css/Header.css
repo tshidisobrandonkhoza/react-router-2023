@@ -4,7 +4,7 @@ header nav {
     left: 0;
     width: 98vw;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 1rem;
     margin: 0 auto;
 }

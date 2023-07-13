@@ -1,13 +1,15 @@
 //import packages
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //import components
 import Home from './components/Home';
 import About from './components/About';
 import MainRoot from './layouts/MainRoot'
 
 import Help from './layouts/Help';
-import Faq from './components/Faq';
-import Contact from './components/Contact';
+import Faq from './components/helpComponents/Faq';
+import Contact from './components/helpComponents/Contact';
+import Events from './layouts/Events';
+import EventsList from './components/eventsComponents/EventsList';
 //import assests
 
 const router = createBrowserRouter([{
@@ -35,6 +37,13 @@ const router = createBrowserRouter([{
             element:<Contact />
           }
         ]
+      },{
+        path:"events",
+        element: <Events />,
+        children: [{
+          path: "eventslist",
+          element: <EventsList />
+        }]
       }]
   }]);
 

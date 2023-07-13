@@ -12,6 +12,7 @@ export default function Header() {
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='about'>About</NavLink>
                     <NavLink to='help'>Help</NavLink>
+                    <NavLink to='events'>Events</NavLink>
                 </nav>
             </header>
         </div>
