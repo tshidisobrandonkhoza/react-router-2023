@@ -1,0 +1,28 @@
+.events-title {
+
+    margin: 3rem 0 0 2vw;
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    background-color: var(--cust);
+    padding: 1rem 0.5rem;
+}
+
+.events-title li {
+    border-radius: 1rem;
+    margin: .75rem 1.5rem;
+    padding: 1rem;
+    background-color: var(--tertiary);
+
+    transition: all.2s linear;
+}
+
+.events-title li:hover {
+    opacity: .8;
+    transition: all.2s linear;
+}
+
+.events-title li a {
+    color: var(--primary);
+    font-size: 1.5rem;
+}

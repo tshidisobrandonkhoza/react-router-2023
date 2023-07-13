@@ -1,15 +1,13 @@
 //import packages  
-import { Link  } from "react-router-dom";
 
 //import components
  
 // import '../assets/css/Help.css'
 
-export default function EventsList() {
+export default function eventslistdetails() {
     return (
         <div className="enEvents">
-             <h2>Event List</h2>
-             
+             <h2>hello</h2>
         </div>
     )
 }
