@@ -37,11 +37,40 @@ button {
     background-color: var(--backup);
     color: #EAF6F6;
 }
-a{
-    
+
+a {
+
     text-decoration: none;
 }
 
 .enCover {
     margin: 1rem;
+}
+
+.breadcrums {
+    padding: 0;
+    margin: .2rem;
+    display: flex;
+}
+
+.breadcrums a {
+    text-decoration: underline;
+    
+  padding-left: .2rem;
+    font-size: 1.5rem;
+
+    text-transform: capitalize;
+}
+
+.breadcrums li::after {
+    font-size: 1.5rem;
+    color: #000;
+    content: "/ ";
+    margin-left: .25rem;
+}
+
+.breadcrums li:last-child:after {
+    display: none;
+
+
 }

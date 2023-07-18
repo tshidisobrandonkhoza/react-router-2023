@@ -37,7 +37,7 @@ export const eventsLoader = async () => {
     const response = await fetch('http://localhost:4000/events')
         .catch(err => {
                // throw Error(err);
-               throw Error('Couldnt connect to the Server')
+               throw Error('Server Error -- Run --> json-server -p 4000  -w  ./data/usersdb.json')
         });
 
     if (!response.ok) {

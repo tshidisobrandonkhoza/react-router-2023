@@ -8,10 +8,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 // import assests
 
 export default function EventDetails() {
-    const { idxs } = useParams()
+ 
     const eventLog = useLoaderData()
-
-
     return (
 
         <div className="enCover">

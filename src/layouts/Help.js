@@ -1,13 +1,23 @@
 //import packages 
-import { NavLink, Outlet } from "react-router-dom";
+import {  NavLink, Outlet, useLocation } from "react-router-dom";
 //import components
+import BreadCrums from "./BreadCrums";
 import '../assets/css/Help.css'
 
 
 export default function Help() {
+  
+    const localUrl = useLocation();
+    const localPath = localUrl.pathname;
+
+
     return (<>
 
         <div className="enCover">
+            <ul className="breadcrums">
+                {/* {local} */}
+                <BreadCrums localPathname={localPath} />
+            </ul>
 
             <h2>Help</h2>
             <p>

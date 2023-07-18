@@ -4,25 +4,25 @@
             "id": 1,
             "title": "Elangeni Lodge",
             "date": "14 Jun 2023",
-            "location": "Mpumalanga, Nkomazi"
+            "location": "Uk"
         },
         {
             "id": 2,
             "title": "Easter Sunday",
             "date": "18 Jun 2023",
-            "location": "Mpumalanga, Nkomazi"
+            "location": "London"
         },
         {
             "id": 3,
-            "title": "Elangeni Lodge",
-            "date": "14 Nov 2023",
-            "location": "Mpumalanga, Nkomazi"
+            "title": "North Lodge",
+            "date": "12 Nov 2023",
+            "location": "Paris"
         },
         {
             "id": 4,
-            "title": "Easter Sunday",
-            "date": "18 Dec 2023",
-            "location": "Mpumalanga, Nkomazi"
+            "title": "Bunny Sunday",
+            "date": "21 Dec 2023",
+            "location": "New York"
         }
     ]
 }
